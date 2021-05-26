@@ -1,0 +1,51 @@
+/* ==UserStyle==
+@name           TweetDeck - Hide avatar images
+@namespace      github.com/U-cauda-elongata
+@version        1.0.0
+@updateURL      https://github.com/U-cauda-elongata/clean-the-web/raw/main/tweetdeck-hide-avatar.user.css
+@license        GPL-3.0-only
+@author         Yu Onaga
+==/UserStyle== */
+
+@-moz-document domain("tweetdeck.twitter.com") {
+    .avatar:not(:hover):not(.compose-account-img) {
+        filter: brightness(0) invert(.9);
+    }
+
+    .dark .avatar:not(:hover):not(.compose-account-img):not(.open-modal) {
+        filter: brightness(0) invert(.3);
+    }
+
+    .prf-header:not(:hover) {
+        background-image: url(https://ton.twimg.com/tweetdeck-web/web/assets/global/backgrounds/td_profile_empty.b902792cc4.jpg) !important;
+    }
+
+    .tweet .avatar, .activity-header ~ .account-summary .avatar, .activity-header .avatar {
+        display: none;
+    }
+
+    .tweet .pos-l {
+        margin-right: -80px !important;
+    }
+
+    .tweet .pos-l .caret {
+        right: 74px !important;
+    }
+
+    .tweet {
+        padding-left: initial !important;
+    }
+
+    .thread {
+        left: 4px !important;
+    }
+
+    .tweet .thread {
+        margin-top: initial !important;
+        height: 100% !important;
+    }
+
+    .tweet-context {
+        margin-left: initial !important;
+    }
+}

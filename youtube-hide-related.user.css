@@ -1,0 +1,14 @@
+/* ==UserStyle==
+@name           YouTube - Hide related videos
+@namespace      github.com/U-cauda-elongata
+@version        1.0.0
+@updateURL      https://github.com/U-cauda-elongata/clean-the-web/raw/main/youtube-hide-related.user.css
+@license        GPL-3.0-only
+@author         Yu Onaga
+==/UserStyle== */
+
+@-moz-document domain("youtube.com") {
+    #related, .ytp-endscreen-content {
+        display: none;
+    }
+}

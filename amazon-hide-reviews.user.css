@@ -1,0 +1,20 @@
+/* ==UserStyle==
+@name           Amazon - Hide reviews
+@namespace      github.com/U-cauda-elongata
+@version        1.0.0
+@updateURL      https://github.com/U-cauda-elongata/clean-the-web/raw/main/amazon-hide-reviews.user.css
+@description    Hides reviews and ratings on Amazon.
+@license        GPL-3.0-only
+@author         Yu Onaga
+==/UserStyle== */
+
+@-moz-document domain("amazon.com"), domain("amazon.co.jp") {
+    #averageCustomerReviews_feature_div,
+    #reviewsMedley,
+    .a-icon-star,
+    .a-icon-star ~ *,
+    .a-icon-star-small,
+    .a-icon-star-small ~ * {
+        display: none;
+    }
+}
