@@ -1,0 +1,18 @@
+/* ==UserStyle==
+@name           YouTube - Hide non moderator chat
+@namespace      github.com/U-cauda-elongata
+@version        1.0.0
+@updateURL      https://github.com/U-cauda-elongata/clean-the-web/raw/main/youtube-hide-non-moderator-chat.user.css
+@license        GPL-3.0-only
+@author         Yu Onaga
+==/UserStyle== */
+
+@-moz-document domain("www.youtube.com") {
+    yt-live-chat-text-message-renderer[author-type=""],
+    yt-live-chat-text-message-renderer[author-type="member"],
+    yt-live-chat-paid-message-renderer,
+    yt-live-chat-paid-sticker-renderer,
+    yt-live-chat-membership-item-renderer {
+        display: none;
+    }
+}
