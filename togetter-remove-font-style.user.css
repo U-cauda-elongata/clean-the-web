@@ -1,0 +1,28 @@
+/* ==UserStyle==
+@name           Togetter - Remove font style
+@namespace      github.com/U-cauda-elongata
+@version        1.0.0
+@updateURL      https://github.com/U-cauda-elongata/clean-the-web/raw/main/togetter-remove-font-style.user.css
+@description    Removes extra font color and weight from Tweets on Togetter/Posfie.
+@license        GPL-3.0-only
+@author         Yu Onaga
+==/UserStyle== */
+
+@-moz-document domain("togetter.com"), domain("posfie.com") {
+    .f13, .f15, .f17, .f19, .f20 {
+        font-size: unset !important;
+        font-weight: unset;
+    }
+
+    .c01, .c02, .c03, .c04, .c05, .c06, .c07, .c08, .c09, .c10, .c11, .c12, .c13, .c14, .c15, .c16, .c17, .c18, .c19, .c20 {
+        color: unset;
+    }
+
+    .s83 {
+        font-size: unset;
+    }
+
+    .red {
+        color: unset;
+    }
+}
